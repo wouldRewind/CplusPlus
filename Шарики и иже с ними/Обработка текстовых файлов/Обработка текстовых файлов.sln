@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Обработка текстовых файлов", "Обработка текстовых файлов\Обработка текстовых файлов.vcxproj", "{19856C5E-D5C8-4F87-B82A-EBC981794F18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Debug|x64.ActiveCfg = Debug|x64
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Debug|x64.Build.0 = Debug|x64
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Debug|x86.ActiveCfg = Debug|Win32
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Debug|x86.Build.0 = Debug|Win32
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Release|x64.ActiveCfg = Release|x64
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Release|x64.Build.0 = Release|x64
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Release|x86.ActiveCfg = Release|Win32
+		{19856C5E-D5C8-4F87-B82A-EBC981794F18}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {559FCDC1-7322-48E8-ADC7-9D7B2A78B4F8}
+	EndGlobalSection
+EndGlobal
