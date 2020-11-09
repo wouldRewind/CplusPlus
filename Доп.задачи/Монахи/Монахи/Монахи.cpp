@@ -1,6 +1,6 @@
 ﻿// Монахи.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 // через производный класс можно обращаться ко всем открытым членам базового класса
-// номер 105 "Монахи" из базы заданий
+// номер 105 в базе задач "Монахи"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -123,6 +123,11 @@ void pushToDynasty(int id, int first, int second, int third, vector <Monk*>* dyn
 void displayAllSenseis(Monk* monk)
 {
 	Monk* sensei = monk->getSensei();
+	// у Святого Павла нет сенсея
+	if (sensei == NULL) {
+		cout << " Да это же Святой Павел! У него нет учителей!" << endl;
+		return;
+	}
 	if (sensei->getId() == 1) {
 		cout << ".";
 		return; //дошли до Святого Павла
@@ -134,10 +139,12 @@ void displayAllSenseis(Monk* monk)
 // возвращает id ближайшего общего сенсея
 int commonSensei(Monk* firstSensei, Monk* secondSensei)
 {
+	// если мы ищем общего сенсея у Святого Павла и ещё кого-то, буду возвращать id Св.Павла - он сам себе сенсей :D
+	if (firstSensei == NULL || secondSensei == NULL) return 1; // 1 - id Св.Павла
+
 	int firstId = firstSensei->getId();
 	int secondId = secondSensei->getId();
-	// если мы ищем общего сенсея у Святого Павла и ещё кого-то, буду возвращать id Св.Павла - он сам себе сенсей :D
-	if (firstId == NULL || secondId == NULL) return 1; // 1 - id Св.Павла
+
 	// если id равны, мы нашли общего предка
 	if (firstId == secondId) return firstId;
 	if (firstSensei->getNodeHeight() > secondSensei->getNodeHeight())
