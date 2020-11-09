@@ -4,3 +4,4 @@
 !.gitattributes
 !.gitmodules
 !*.cpp
+!*.pdf
